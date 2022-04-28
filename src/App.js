@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import AddEvents from "./components/AddEvents";
+
 import Navbar from "./components/Navbar";
 import Registration from "./components/Registration";
 import Admin from "./pages/Admin";
