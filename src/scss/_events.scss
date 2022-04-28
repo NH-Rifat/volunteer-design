@@ -1,0 +1,90 @@
+.events {
+  position: relative;
+  background-color: #e5e5e5;
+  height: 100vh;
+  width: 100%;
+  @media screen and (max-width: 1500px) {
+    height: 100%;
+  }
+  &__wrapper {
+    padding: 20rem 10rem;
+    @media screen and (max-width: 1500px) {
+      padding: 20rem 4rem;
+    }
+    @include breakpoint-down(small) {
+      padding: 15rem 1rem;
+    }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    @media screen and (max-width: 1300px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-single {
+      background-color: #fff;
+      padding: 2rem;
+      display: flex;
+      width: 570px;
+      height: 219px;
+      flex-direction: row;
+      border-radius: 10px;
+      @include breakpoint-down(medium) {
+        width: 100%;
+      }
+      &-img {
+        flex-basis: 40%;
+        width: 194px;
+        height: 173px;
+        margin-right: 2rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__info {
+        flex-basis: 60%;
+        position: relative;
+        h4 {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 33px;
+          color: #0b0b0b;
+        }
+        p {
+          margin: 1rem auto;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 26px;
+          color: #000000;
+        }
+        &-btn {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          border: none;
+          outline: none;
+          padding: 1rem 3rem;
+          background: #e3e3e3;
+          border-radius: 5px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          text-align: center;
+          color: #787878;
+        }
+      }
+    }
+  }
+}
